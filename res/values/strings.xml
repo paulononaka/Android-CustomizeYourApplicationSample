@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CustomizeYourApplicationSample</string>
+    <string name="app_description">Customize your application!</string>
+    <string name="btnOption1">Option 1</string>
+    <string name="btnOption2">Option 2</string>
+    <string name="txtInformation1">Choose an option below!</string>
+    <string name="txtInformation2">Visit paulononaka.wordpress.com ;)</string>
+</resources>

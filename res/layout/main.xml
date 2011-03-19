@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#E5EDE4">
+
+	<RelativeLayout
+		android:id="@+id/menu"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:background="@drawable/img_menu">
+
+		<Button
+			android:id="@+id/btnOption1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="2dip"
+			android:height="50dip"
+			android:text="@string/btnOption1"
+			android:textColor="@android:color/white"
+			android:background="@drawable/btn_custom" />
+
+		<Button
+			android:id="@+id/btnOption2"
+			android:layout_margin="2dip"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/btnOption1"
+			android:height="50dip"
+			android:text="@string/btnOption2"
+			android:textColor="@android:color/white"
+			android:background="@drawable/btn_custom" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_above="@id/menu">
+
+		<RelativeLayout
+			android:id="@+id/imgBalloon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/img_balloon">
+
+			<TextView
+				android:id="@+id/txtInformation1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/txtInformation1"
+				android:textColor="?android:attr/textColorPrimaryInverse"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/txtInformation2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/txtInformation1"
+				android:text="@string/txtInformation2"
+				android:textColor="?android:attr/textColorPrimaryInverse"
+				android:textSize="15px" />
+
+		</RelativeLayout>
+
+		<ImageView
+			android:src="@drawable/img_droidman"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_toRightOf="@id/imgBalloon" />
+
+	</RelativeLayout>
+
+</RelativeLayout>
